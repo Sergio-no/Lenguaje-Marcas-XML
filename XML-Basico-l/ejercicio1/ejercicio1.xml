@@ -1,0 +1,23 @@
+<!--
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 18/03/2025
+Ejercicio: Ciudades
+-->
+
+<!-- Lista de ciudades -->
+
+<ciudades>
+    <ciudad continente="Asia">
+        <nombre>Nueva Delhi</nombre>
+        <país>India</país>
+    </ciudad>
+    <ciudad continente="Europa">
+        <nombre>Lisboa</nombre>
+        <país>Portugal</país>
+    </ciudad>
+    <ciudad continente="África">
+        <nombre>El Cairo</nombre>
+        <país>Egipto</país>
+    </ciudad>
+</ciudades>

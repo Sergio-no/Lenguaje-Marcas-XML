@@ -1,0 +1,32 @@
+<!--
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 18/03/2025
+Ejercicio: Empleados
+-->
+
+<!-- Lista de empleados -->
+
+<empleados>
+    <empleado>
+        <nombre>Ana</nombre>
+        <apellido>García</apellido>
+        <edad>30</edad>
+        <departamento>Ventas</departamento>
+        <cargo>Ejecutivo de ventas</cargo>
+    </empleado>
+    <empleado>
+        <nombre>Luis</nombre>
+        <apellido>Rodríguez</apellido>
+        <edad>45</edad>
+        <departamento>Finanzas</departamento>
+        <cargo>Analista financiero</cargo>
+    </empleado>
+    <empleado>
+        <nombre>María</nombre>
+        <apellido>López</apellido>
+        <edad>28</edad>
+        <departamento>Marketing</departamento>
+        <cargo>Especialista en redes sociales</cargo>
+    </empleado>
+</empleados>

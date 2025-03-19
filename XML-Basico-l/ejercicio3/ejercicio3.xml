@@ -1,0 +1,14 @@
+<!--
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 18/03/2025
+Ejercicio: Lista de Libros
+-->
+
+<!-- Lista de libros -->
+
+<libros>
+    <libro título="Cien años de soledad" autor="Gabriel García Márquez" año="1967"/>
+    <libro título="1984" autor="George Orwell" año="1949"/>
+    <libro título="El Principito" autor="Antoine de Saint-Exupéry" año="1943"/>
+</libros>
