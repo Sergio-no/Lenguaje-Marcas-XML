@@ -10,7 +10,19 @@ Ejercicio: Lista de Libros
 <!-- Lista de libros -->
 
 <libros>
-    <libro título="Cien años de soledad" autor="Gabriel García Márquez" año="1967"/>
-    <libro título="1984" autor="George Orwell" año="1949"/>
-    <libro título="El Principito" autor="Antoine de Saint-Exupéry" año="1943"/>
+    <libro>
+        <título>Cien años de soledad</título>
+        <autor>Gabriel García Márquez</autor>
+        <año>1967</año>
+    </libro>
+    <libro>
+        <título>1984</título>
+        <autor>George Orwell</autor>
+        <año>1949</año>
+    </libro>
+    <libro>
+        <título>El Principito</título>
+        <autor>Antoine de Saint-Exupéry</autor>
+        <año>1943</año>
+    </libro>
 </libros>
