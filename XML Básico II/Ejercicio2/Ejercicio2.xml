@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 23/03/2025
+Ejercicio: Información equipos de fútbol
+-->
+
+<!-- Información equipos de fútbol. -->
+
+<equipos>
+    <equipo>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador />
+        <jugadores>
+            <jugador posicion="Defensa">
+                <nombre>Jesús Vallejo</nombre>
+                <nacionalidad>Española</nacionalidad>
+            </jugador>
+            <jugador posicion="Portero">
+                <nombre>Luka Modric</nombre>
+                <nacionalidad>Croata</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>Rayo Vallecano</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador />
+        <jugadores>
+            <jugador posicion="Centrocampista">
+                <nombre>Isi Palazón</nombre>
+                <nacionalidad>Española</nacionalidad>
+            </jugador>
+            <jugador posicion="Defensa">
+                <nombre>Abdul Mumin</nombre>
+                <nacionalidad>Ghanesa</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos>
