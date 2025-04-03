@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025
+Ejercicio 1: Ejerccio 1
+-->
+
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, editorial, autor, num_paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT num_paginas (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titulo>El juego del Hater</titulo>
+        <editorial>Ediciones Martínez Roca</editorial>
+        <autor>
+            <nombre>Raúl</nombre>
+            <apellidos>Álvarez Genes</apellidos>
+        </autor>
+        <num_paginas>248</num_paginas>
+    </libro>
+    <libro>
+        <titulo>Así es la puta vida</titulo>
+        <editorial>B</editorial>
+        <autor>
+            <nombre>Jorge</nombre>
+            <apellidos>Carrillo de Albornoz Torres</apellidos>
+        </autor>
+        <num_paginas>208</num_paginas>
+    </libro>
+    <libro>
+        <titulo>Don Quijote de la Mancha</titulo>
+        <editorial>Francisco de Robles</editorial>
+        <autor>
+            <nombre>Miguel</nombre>
+            <apellidos>de Cervantes</apellidos>
+        </autor>
+        <num_paginas>863</num_paginas>
+    </libro>
+</biblioteca>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 8: Corrección de errores en XML 
+-->
+
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto*)>
+    <!ELEMENT contacto (nombre, telefonofijo?, telefonmovil?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT telefonofijo (#PCDATA)>
+    <!ELEMENT telefonmovil (#PCDATA)>
+]>
+
+<agenda>
+    <contacto>
+        <nombre>Ayuntamiento</nombre>
+        <telefonofijo>91 000 00 00</telefonofijo>
+    </contacto>
+    <contacto>
+        <nombre>Emergencias</nombre>
+        <telefonofijo>112</telefonofijo>
+        <telefonmovil>600 000 000</telefonmovil>
+    </contacto>
+    <contacto>
+        <nombre>Policía</nombre>
+        <telefonmovil>091</telefonmovil>
+    </contacto>
+</agenda>

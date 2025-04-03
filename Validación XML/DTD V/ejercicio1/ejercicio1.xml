@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 1: Validacion XML
+-->
+
+<!DOCTYPE favoritos [ <!-- No tiene elementos válidos que cumplan con una estructura definida -->
+    <!ELEMENT favoritos (marcador)>
+    <!ELEMENT marcador (nombre, uri)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT uri (#PCDATA)>
+]>
+
+<marcadores>
+    <marcador>
+        <nombre>W3C</nombre>
+        <uri>http://www.w3.org/</uri>
+    </marcador>
+    <marcador>
+        <nombre>Web Hypertext Application Technology Working Group (WHATWG)</nombre>
+        <uri>http://www.whatwg.org/</uri>
+    </marcador>
+</marcadores>

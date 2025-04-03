@@ -1,0 +1,12 @@
+<!-- DTD externa (aeropuerto.dtd) -->
+<!ELEMENT aeropuerto (nombre, fecha, vuelos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT vuelos (vuelo+)>
+<!ELEMENT vuelo (origen, destino, hora-salida, hora-llegada, diario?)>
+<!ATTLIST vuelo codigo ID #REQUIRED estado (C | E | R) "E">
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT hora-salida (#PCDATA)>
+<!ELEMENT hora-llegada (#PCDATA)>
+<!ELEMENT diario EMPTY>

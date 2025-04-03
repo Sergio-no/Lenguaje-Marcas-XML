@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025
+Ejercicio 3: Aeropuerto
+-->
+
+<!DOCTYPE aeropuerto SYSTEM "ejercicio3.dtd">
+<aeropuerto>
+    <nombre>Aeropuerto Internacional</nombre>
+    <fecha>2025-03-29</fecha>
+    <vuelos>
+        <vuelo codigo="FL123" estado="E">
+            <origen>Madrid</origen>
+            <destino>Paris</destino>
+            <hora-salida>14:00</hora-salida>
+            <hora-llegada>16:30</hora-llegada>
+            <diario/>
+        </vuelo>
+    </vuelos>
+</aeropuerto>

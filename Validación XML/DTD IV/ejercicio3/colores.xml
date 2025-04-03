@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 3: Corrección de errores en XML 
+-->
+
+<!DOCTYPE colores [
+    <!ELEMENT colores (color*)> <!-- ERROR: Se corrigió el uso de `+` por `*` para permitir cero o más elementos -->
+    <!ELEMENT color (#PCDATA)>
+]>
+
+<colores>
+    <color>azul marino</color>
+    <color>negro</color> <!-- ERROR: "negro" estaba fuera de una etiqueta <color> -->
+    <color>amarillo</color>
+</colores>

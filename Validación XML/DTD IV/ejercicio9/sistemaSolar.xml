@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 9: Corrección de errores en XML 
+-->
+
+<!DOCTYPE sistemaSolar [
+    <!ELEMENT sistemaSolar (planeta*, asteroide*)>
+    <!ELEMENT planeta (#PCDATA)>
+    <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+    <planeta>Tierra</planeta>
+    <planeta>Marte</planeta>
+    <asteroide>Ceres</asteroide>
+</sistemaSolar>

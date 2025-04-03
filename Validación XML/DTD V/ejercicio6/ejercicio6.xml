@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 6: Validacion XML
+-->
+
+<!DOCTYPE paises [ 
+    <!ELEMENT paises (pais+)> <!-- El elemento paises debe contener uno o más elementos pais -->
+    <!ELEMENT pais (nombre, unionEuropea?, otan?)> <!-- El elemento pais debe tener nombre y opcionalmente unionEuropea y otan -->
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT unionEuropea EMPTY> <!-- El elemento unionEuropea no debe tener contenido -->
+    <!ELEMENT otan EMPTY> <!-- El elemento otan no debe tener contenido -->
+]>
+
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea/>
+        <otan/>
+    </pais>
+    <pais>
+        <nombre>Noruega</nombre>
+        <otan/>
+    </pais>
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea/>
+    </pais>
+</paises>

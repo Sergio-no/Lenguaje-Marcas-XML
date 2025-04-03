@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025
+Ejercicio 1: Cuentos
+-->
+
+<!DOCTYPE cuentos SYSTEM "ejercicio1.dtd">
+<cuerpo>
+    <cuento cod="A01" titulo="El Bosque Encantado" genero="fantasía">
+        <personajes>
+            <personaje id="p1" tipo="principal">
+                <nombre>Ana</nombre>
+                <genero>F</genero>
+                <descripcion>Una valiente exploradora.</descripcion>
+                <descripcion_fisica>Cabello rubio y ojos verdes.</descripcion_fisica>
+            </personaje>
+            <personaje id="p2" tipo="antagonista">
+                <nombre>Bruja Negra</nombre>
+                <genero>F</genero>
+                <url>http://imagenes.com/bruja_negra.jpg</url>
+            </personaje>
+        </personajes>
+        <trama>Ana descubre un bosque encantado donde debe vencer a la Bruja Negra.</trama>
+        <etiqueta nombre="aventura"/>
+        <precio moneda="usd">12.99</precio>
+    </cuento>
+
+    <cuento cod="B02" titulo="El Dragón Dormido" genero="infantil">
+        <personajes>
+            <personaje id="p1" tipo="principal">
+                <nombre>Lucas</nombre>
+                <genero>M</genero>
+                <imagen>http://imagenes.com/lucas.jpg</imagen>
+            </personaje>
+        </personajes>
+        <trama>Lucas despierta a un dragón que resulta ser su amigo.</trama>
+        <etiqueta nombre="amistad"/>
+    </cuento>
+</cuerpo>

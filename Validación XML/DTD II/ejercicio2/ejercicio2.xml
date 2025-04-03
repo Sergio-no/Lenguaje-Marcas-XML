@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025
+Ejercicio 2: Equipos NBA
+-->
+
+<!DOCTYPE EquiposNBA [
+    <!ELEMENT EquiposNBA (equipo+ | nombre+)>
+    <!ELEMENT nombre (#PCDATA)>
+    
+    <!ELEMENT equipo (titulos, posicion, quinteto)>
+    <!ATTLIST equipo conferencia CDATA #REQUIRED>
+    
+    <!ELEMENT titulos (#PCDATA)>
+    <!ELEMENT posicion (#PCDATA)>
+    <!ELEMENT quinteto (#PCDATA)>
+]>
+
+<!-- Ejemplo de uso -->
+<EquiposNBA>
+    <equipo conferencia="Oeste">
+        <nombre>Los Angeles Lakers</nombre>
+        <titulos>17</titulos>
+        <posicion>3</posicion>
+        <quinteto>LeBron, Davis, Reaves, Russell, Vanderbilt</quinteto>
+    </equipo>
+</EquiposNBA>

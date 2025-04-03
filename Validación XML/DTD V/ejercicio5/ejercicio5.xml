@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 5: Validacion XML
+-->
+
+<!DOCTYPE reyesEspanioles [ 
+    <!ELEMENT reyesEspanioles (rey*, reina+)> <!-- El elemento reyesEspañoles debe contener 0 o más reyes y al menos 1 reina -->
+    <!ELEMENT rey (nombre, padre, madre)> <!-- El elemento rey debe tener nombre, padre y madre -->
+    <!ELEMENT reina (nombre, padre, madre)> <!-- El elemento reina debe tener nombre, padre y madre -->
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT padre (#PCDATA)>
+    <!ELEMENT madre (#PCDATA)>
+]>
+
+<reyesEspanioles>
+    <rey>
+        <nombre>Felipe III</nombre>
+        <padre>Felipe II</padre>
+        <madre>Ana de Austria</madre>
+    </rey>
+    <reina>
+        <nombre>Juana la Loca</nombre>
+        <padre>Fernando el Católico</padre>
+        <madre>Isabel la Católica</madre>
+    </reina>
+    <rey>
+        <nombre>Carlos I</nombre>
+        <padre>Felipe el Hermoso</padre>
+        <madre>Juana la Loca</madre>
+    </rey>
+</reyesEspanioles>

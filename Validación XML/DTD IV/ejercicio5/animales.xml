@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 5: Corrección de errores en XML 
+-->
+
+<!DOCTYPE animales [
+    <!ELEMENT animales (animal*)> <!-- ERROR: Se corrigió `animal+` por `animal*` para permitir cero o más elementos -->
+    <!ELEMENT animal (#PCDATA)>
+]>
+
+<animales>
+    <animal>Caniche</animal> <!-- ERROR: Se corrigieron las etiquetas <perro> y <gato> por <animal>, ya que el DTD solo define `animal` -->
+    <animal>Siámes</animal>
+</animales>

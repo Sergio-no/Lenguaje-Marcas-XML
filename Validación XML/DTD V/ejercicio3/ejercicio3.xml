@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 3: Validacion XML
+-->
+
+<!DOCTYPE aeropuertos [ <!-- El elemento aeropuerto debe permitir que cerrado sea opcional -->
+    <!ELEMENT aeropuertos (aeropuerto+)>
+    <!ELEMENT aeropuerto (nombre, cerrado?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cerrado (#PCDATA)>
+]>
+
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlin Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto>
+        <nombre>Berlin Tempelhof (THF)</nombre>
+        <cerrado>2008</cerrado>
+    </aeropuerto>
+</aeropuertos>

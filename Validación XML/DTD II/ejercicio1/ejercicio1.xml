@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025
+Ejercicio 1: Factura Electrónica
+-->
+
+<!DOCTYPE factura [
+    <!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+    <!ATTLIST factura numero CDATA #REQUIRED fecha CDATA #REQUIRED>
+    
+    <!ELEMENT datos-emisor (nombre, cif, telefono)>
+    <!ELEMENT datos-cliente (nombre, cif, telefono)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    
+    <!ELEMENT detalle-factura (linea+)>
+    <!ATTLIST detalle-factura importe CDATA #REQUIRED>
+    
+    <!ELEMENT linea (descripcion, cantidad, pvp, oferta?)>
+    <!ATTLIST linea codigo-articulo ID #REQUIRED tipo (Libro | DVD | Varios) #REQUIRED>
+    
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT pvp (#PCDATA)>
+    <!ELEMENT oferta EMPTY>
+]>
+
+<!-- Ejemplo de uso -->
+<factura numero="F12345" fecha="2025-03-29">
+    <datos-emisor>
+        <nombre>Librería Central</nombre>
+        <cif>ABC123456</cif>
+        <telefono>987654321</telefono>
+    </datos-emisor>
+    <datos-cliente>
+        <nombre>Biblioteca Nacional</nombre>
+        <cif>XYZ654321</cif>
+        <telefono>123456789</telefono>
+    </datos-cliente>
+    <detalle-factura importe="120.50">
+        <linea codigo-articulo="A001" tipo="Libro">
+            <descripcion>Introducción a XML</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>25.50</pvp>
+            <oferta/>
+        </linea>
+    </detalle-factura>
+</factura>

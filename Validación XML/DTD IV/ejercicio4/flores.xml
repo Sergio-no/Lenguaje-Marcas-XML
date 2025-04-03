@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 4: Corrección de errores en XML 
+-->
+
+<!DOCTYPE flores [
+    <!ELEMENT flores (flor*)> <!-- ERROR: Se corrigió `flor+` por `flor*` para permitir cero o más elementos -->
+    <!ELEMENT flor (#PCDATA)>
+]>
+
+<flores>
+    <flor>Rosa</flor> <!-- ERROR: Se agregó un ejemplo de contenido válido dentro de <flores> -->
+</flores>

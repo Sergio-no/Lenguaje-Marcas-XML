@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 30/03/2025 
+Ejercicio 9: Validacion XML
+-->
+
+<!DOCTYPE mensajes [ 
+    <!ELEMENT mensajes (mensaje+)> <!-- El elemento mensajes debe contener uno o más elementos mensaje -->
+    <!ELEMENT mensaje (de, para, hora, texto)> <!-- Cada mensaje debe contener de, para, hora y texto -->
+    <!ELEMENT de (#PCDATA)> <!-- El elemento de debe contener texto -->
+    <!ELEMENT para (#PCDATA)> <!-- El elemento para debe contener texto -->
+    <!ELEMENT hora (#PCDATA)> <!-- El elemento hora debe contener texto -->
+    <!ELEMENT texto (#PCDATA | strong)*> <!-- El elemento texto puede contener texto o elementos strong -->
+    <!ELEMENT strong (#PCDATA)> <!-- El elemento strong debe contener texto -->
+]>
+
+<mensajes>
+    <mensaje>
+        <de>Pepe (pepe@example.com)</de>
+        <para>Juan (juan@example.com)</para>
+        <hora>28/02/2011 17:48:23,61</hora>
+        <texto>Hola, Juan, ¿qué haces?</texto>
+    </mensaje>
+    <mensaje>
+        <de>Juan (juan@example.com)</de>
+        <para>Pepe (pepe@example.com)</para>
+        <hora>28/02/2011 17:54:20,87</hora>
+        <texto>Aquí, aprendiendo <strong>XML</strong></texto>
+    </mensaje>
+</mensajes>
