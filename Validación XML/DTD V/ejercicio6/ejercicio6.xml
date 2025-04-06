@@ -11,7 +11,7 @@ Ejercicio 6: Validacion XML
     <!ELEMENT pais (nombre, unionEuropea?, otan?)> <!-- El elemento pais debe tener nombre y opcionalmente unionEuropea y otan -->
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT unionEuropea EMPTY> <!-- El elemento unionEuropea no debe tener contenido -->
-    <!ELEMENT otan EMPTY> <!-- El elemento otan no debe tener contenido -->
+    <!ELEMENT otan EMPTY> 
 ]>
 
 <paises>

@@ -8,12 +8,12 @@ Ejercicio 8: Validacion XML
 
 <!DOCTYPE contabilidad [ 
     <!ELEMENT contabilidad (apunte*)> <!-- El elemento contabilidad debe contener 0 o más apuntes -->
-    <!ELEMENT apunte (ingreso | gasto)> <!-- Cada apunte debe contener un único ingreso o gasto -->
+    <!ELEMENT apunte (ingreso | gasto)> 
     <!ELEMENT ingreso (fecha, cantidad, concepto)> <!-- El elemento ingreso debe contener fecha, cantidad y concepto -->
     <!ELEMENT gasto (fecha, cantidad, concepto)> <!-- El elemento gasto debe contener fecha, cantidad y concepto -->
     <!ELEMENT fecha (#PCDATA)> <!-- El elemento fecha debe contener texto -->
-    <!ELEMENT cantidad (#PCDATA)> <!-- El elemento cantidad debe contener texto -->
-    <!ELEMENT concepto (#PCDATA)> <!-- El elemento concepto debe contener texto -->
+    <!ELEMENT cantidad (#PCDATA)> 
+    <!ELEMENT concepto (#PCDATA)> 
 ]>
 
 <contabilidad>

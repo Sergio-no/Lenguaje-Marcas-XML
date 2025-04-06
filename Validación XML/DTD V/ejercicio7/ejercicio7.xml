@@ -11,8 +11,8 @@ Ejercicio 7: Validacion XML
     <!ELEMENT color (nombreSvg, codigo)> <!-- El elemento color debe contener nombreSvg y codigo -->
     <!ELEMENT nombreSvg (#PCDATA)> <!-- El elemento nombreSvg debe contener texto -->
     <!ELEMENT codigo (rgb | cmyk)> <!-- El elemento codigo debe contener un único elemento rgb o cmyk -->
-    <!ELEMENT rgb (#PCDATA)> <!-- El elemento rgb debe contener texto -->
-    <!ELEMENT cmyk (#PCDATA)> <!-- El elemento cmyk debe contener texto -->
+    <!ELEMENT rgb (#PCDATA)>
+    <!ELEMENT cmyk (#PCDATA)> 
 ]>
 
 <colores>

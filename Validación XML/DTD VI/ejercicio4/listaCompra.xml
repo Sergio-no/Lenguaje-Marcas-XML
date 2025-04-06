@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio: lista de la compra
+-->
+
+<!DOCTYPE listaCompra [
+    <!ELEMENT listaCompra (item*)>
+    <!ELEMENT item EMPTY>
+    <!ATTLIST item nombre CDATA #REQUIRED>
+    <!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+    <item nombre="leche" cantidad="12 litros" /> <!-- Los elementos leche y pan los he reemplazado por elemento item -->
+    <item nombre="pan" cantidad="3 barras de cuarto" /> <!-- El atributo nombre no se utilizaba -->
+</listaCompra>

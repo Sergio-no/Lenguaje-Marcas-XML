@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio: inventores
+-->
+
+<!DOCTYPE inventores [
+    <!ELEMENT inventores (inventor*)>
+    <!ELEMENT inventor EMPTY>
+    <!ATTLIST inventor invento CDATA #REQUIRED>
+    <!ATTLIST inventor nombre CDATA #REQUIRED> <!-- Habia que cambiar de ID a CDATA -->
+]>
+<inventores>
+    <inventor nombre="Robert Adler" invento="Mando a distancia" />
+    <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+    <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+    <inventor invento="Fuego" />
+</inventores>

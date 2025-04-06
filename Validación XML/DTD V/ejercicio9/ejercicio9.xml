@@ -10,10 +10,10 @@ Ejercicio 9: Validacion XML
     <!ELEMENT mensajes (mensaje+)> <!-- El elemento mensajes debe contener uno o más elementos mensaje -->
     <!ELEMENT mensaje (de, para, hora, texto)> <!-- Cada mensaje debe contener de, para, hora y texto -->
     <!ELEMENT de (#PCDATA)> <!-- El elemento de debe contener texto -->
-    <!ELEMENT para (#PCDATA)> <!-- El elemento para debe contener texto -->
-    <!ELEMENT hora (#PCDATA)> <!-- El elemento hora debe contener texto -->
+    <!ELEMENT para (#PCDATA)> 
+    <!ELEMENT hora (#PCDATA)> 
     <!ELEMENT texto (#PCDATA | strong)*> <!-- El elemento texto puede contener texto o elementos strong -->
-    <!ELEMENT strong (#PCDATA)> <!-- El elemento strong debe contener texto -->
+    <!ELEMENT strong (#PCDATA)> 
 ]>
 
 <mensajes>

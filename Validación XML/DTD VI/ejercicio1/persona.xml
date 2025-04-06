@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio: persona
+-->
+
+<!DOCTYPE persona [
+    <!ELEMENT persona EMPTY>
+    <!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona nombre="Juan Pérez" /> <!-- El error era que habia un campo dni que en la dtd no existia y no habia un campo nombre -->
