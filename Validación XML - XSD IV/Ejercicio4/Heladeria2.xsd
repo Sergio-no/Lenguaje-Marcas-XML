@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva 
+Curso: 1ºDAM 
+Fecha: 18/04/2025
+Ejercicio: Heladeria 2
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified">
+
+  <!-- Definición del elemento raíz -->
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:choice>
+              <!-- Opción 1: fresa y chocolate -->
+              <xs:sequence>
+                <xs:element name="fresa" type="xs:empty"/>
+                <xs:element name="chocolate" type="xs:empty"/>
+              </xs:sequence>
+              <!-- Opción 2: vainilla y chocolate -->
+              <xs:sequence>
+                <xs:element name="vainilla" type="xs:empty"/>
+                <xs:element name="chocolate" type="xs:empty"/>
+              </xs:sequence>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tipo vacío para los sabores -->
+  <xs:complexType name="empty"/>
+
+</xs:schema>

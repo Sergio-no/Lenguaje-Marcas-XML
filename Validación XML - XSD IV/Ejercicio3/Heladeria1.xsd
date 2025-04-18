@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva 
+Curso: 1ºDAM 
+Fecha: 18/04/2025
+Ejercicio: Heladeria 1
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified">
+
+  <!-- Definición del elemento raíz -->
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Primer elemento: chocolate o fresa (elección exclusiva) -->
+              <xs:choice>
+                <xs:element name="chocolate">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                      <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fresa">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                      <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:choice>
+              <!-- Segundo elemento: vainilla, turrón o nata (elección exclusiva) -->
+              <xs:choice>
+                <xs:element name="vainilla">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                      <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="turron">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                      <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="nata">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                      <xs:minInclusive value="0"/>
+                      <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <!-- Atributo fabricación -->
+            <xs:attribute name="fabricación" type="xs:date" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
