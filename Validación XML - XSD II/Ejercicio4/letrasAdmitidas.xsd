@@ -1,0 +1,20 @@
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM 
+Fecha: 20/04/2025
+Ejercicio: Letras Admitidas
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!-- Definición del elemento "letras" -->
+  <xs:element name="letras">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <!-- Patrón para uno o más pares de letras (mayúscula + minúscula) -->
+        <xs:pattern value="([A-Z][a-z])+" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>

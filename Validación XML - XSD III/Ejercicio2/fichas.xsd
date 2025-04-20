@@ -1,0 +1,31 @@
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 20/04/2025
+Ejercicio: Fichas
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified">
+    <xs:element name="fichas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ficha" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="clave">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="4"/> <!-- Longitud mínima -->
+                                        <xs:maxLength value="10"/> <!-- Longitud máxima -->
+                                        <xs:pattern value="[a-zA-Z0-9]{4,10}"/> <!-- Letras y dígitos -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

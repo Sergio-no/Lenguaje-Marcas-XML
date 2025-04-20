@@ -1,0 +1,16 @@
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 20/04/2025
+Ejercicio: Solucion 2
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="clave">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[a-zA-Z0-9]{10}"/> <!-- Longitud fija y caracteres permitidos -->
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
