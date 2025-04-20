@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Sergio Negro Oliva
+Curso: 1ºDAM
+Fecha: 20/04/2025
+Ejercicio: Ejercicio 5
+-->
+
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="fichas.xsd">
+    <ficha>
+        <nombre>Antonio Machado Ruiz</nombre>
+        <iniciales>AMR</iniciales>
+        <edad>22</edad>
+    </ficha>
+    <ficha>
+        <nombre>Mario Moreno</nombre>
+        <!-- Corregido: Las iniciales deben tener exactamente 3 letras mayúsculas -->
+        <iniciales>MMO</iniciales>
+        <edad>23</edad>
+    </ficha>
+    <ficha>
+        <!-- Corregido: El orden de los elementos debe coincidir con el esquema -->
+        <nombre>Ada Lovelace</nombre>
+        <iniciales>ALO</iniciales>
+        <edad>24</edad>
+    </ficha>
+    <ficha>
+        <!-- Corregido: El nombre debe comenzar con mayúsculas y las iniciales deben ser mayúsculas -->
+        <nombre>Pablo Ruiz Picasso</nombre>
+        <iniciales>PRP</iniciales>
+        <edad>24</edad>
+    </ficha>
+</fichas>
